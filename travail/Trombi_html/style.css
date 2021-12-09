@@ -1,0 +1,81 @@
+.media-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.h1 {
+    font-size: 36px;
+}
+
+
+
+
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.media-middle {
+    vertical-align: middle;
+}
+.h3 {
+    font-size: 24px;
+}
+.h1, .h2, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.h1, .h2, .h3 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+
+
+
+
+.label-success {
+    background-color: #121212;
+}
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.media-middle {
+    vertical-align: middle;
+}
+.h3 {
+    font-size: 24px;
+}
+
+
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mp {
+    width: 16.66666667%;
+    float: left;
+}
+
+.ma {
+    float: left;
+}
+.mo {
+    width: 100%;
+}
+.mp, .ma, .mo {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.mo, .dropdown-menu {
+    float: left;
+}
