@@ -12,14 +12,19 @@ body{
 }
 
 .menu-bar{
-    background: #c4c3c3;
+    background: #d9edf7;
     text-align: center;
+}
+
+img{
+    width: 150px;
+    height: 50px;
 }
 
 .menu-bar ul{
     display: inline-flex;
     list-style: none;
-    color: black;
+    color: #777;
 }
 
 .menu-bar ul li{
@@ -30,11 +35,11 @@ body{
 
 .menu-bar ul li a{
     text-decoration: none;
-    color: black;
+    color: #777;
 }
 
 .active, .menu-bar li:hover{
-    background: #e4e4e4;
+    background: #F8F8F8;
     border-radius: 3px;
 }
 
@@ -45,7 +50,7 @@ body{
 .active, .menu-bar li:hover .sub-menu-l{
     display: block;
     position: absolute;
-    background: #c4c3c3;
+    background: #d9edf7;
     margin-top: 15px;
     margin-left: -15px;
 }
@@ -58,7 +63,7 @@ body{
 .active, .menu-bar li:hover .sub-menu-l ul li{
     width: 150px;
     padding: 10px;
-    border-bottom: 1px dotted #e4e4e4;
+    border-bottom: 1px dotted #F8F8F8;
     background: transparent;
     border-radius: 0;
     text-align: left;
@@ -69,5 +74,5 @@ body{
 }
 
 .active, .menu-bar li:hover .sub-menu-l ul li a:hover{
-    color: #ffffff;
+    color: #F8F8F8;
 }
