@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('etna');
 });
+
+Route::get('profile/{id}', function ($id) {
+
+    $data = DB::table('profiles')->where('id', "=", $id)->get();
+
+    return view('profile', ['data' => $data]);
+});
+
+Route::get('service', function () {
+
+    $data = DB::table('profiles')->get();
+
+    return view('service', ['data' => $data]);
+})->name("service.profile");
