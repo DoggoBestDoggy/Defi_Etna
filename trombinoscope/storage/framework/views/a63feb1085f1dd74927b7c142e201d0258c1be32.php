@@ -3,6 +3,7 @@
 <html>
 
 <head>
+    <link href="etna.png" rel="icon">
     <title>Trombi ETNA</title>
 </head>
 
@@ -10,24 +11,38 @@
     <div class="formulaire">
         <form action="" method="post">
 
+            <?php echo csrf_field(); ?>
+
             <label for="login">Login :</label>
-            <input type="text" name="login" id="login" placeholder="Type your login...">
+            <input type="text" name="login" id="login">
             <br />
 
             <label for="firstname">Firstname :</label>
-            <input type="text" name="firstname" id="firstname" placeholder="Type your firstname...">
+            <input type="text" name="firstname" id="firstname">
             <br />
 
             <label for="lastname">Lastname :</label>
-            <input type="text" name="lastname" id="lastname" placeholder="Type your lastname...">
+            <input type="text" name="lastname" id="lastname">
             <br />
 
             <label for="email">Email :</label>
-            <input type="email" name="email" id="email" placeholder="Type your email...">
+            <input type="email" name="email" id="email">
+            <br />
+
+            <label for="work">Work Station :</label>
+            <input type="text" name="work" id="work">
+            <br />
+
+            <label for="role">Role : (SuperAdmin=0 | Admin=1 | User=2)</label>
+            <input type="number" name="role" id="role">
             <br />
 
             <label for="picture">Picture :</label>
             <input type="file" name="picture" id="picture" accept="image/png, image/jpeg">
+            <br />
+
+            <br />
+            <input type="submit" value="Add Profile">
             <br />
 
         </form>

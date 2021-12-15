@@ -23,7 +23,7 @@ class UserSeeder extends Seeder
                 'email' => 'samir@etna-alternance.net',
                 'picture' => 'https://auth.etna-alternance.net/api/users/samir/photo',
                 'work' => 'Directeur',
-                'role_id' => '0' //SuperAdmin
+                'role' => '0' //SuperAdmin
             ],
             [
                 'login' => 'deborah.cristiani',
@@ -32,7 +32,7 @@ class UserSeeder extends Seeder
                 'email' => 'deborah.cristiani@etna-learning.fr',
                 'picture' => 'https://auth.etna-alternance.net/api/users/deborah.cristiani/photo',
                 'work' => 'Responsable RH',
-                'role_id' => '0' //SuperAdmin
+                'role' => '0' //SuperAdmin
             ],
             [
                 'login' => 'daime_a',
@@ -41,7 +41,7 @@ class UserSeeder extends Seeder
                 'email' => 'adeline.daime@etna-alternance.net',
                 'picture' => 'https://auth.etna-alternance.net/api/users/daime_a/photo',
                 'work' => 'Responsable RH',
-                'role_id' => '0' //SuperAdmin
+                'role' => '0' //SuperAdmin
             ]
         ]);
     }

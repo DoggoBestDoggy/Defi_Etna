@@ -22,7 +22,8 @@ class Profiles extends Migration
                 $table->string('email', 255)->unique();
                 $table->string('picture');
                 $table->string('work', 45);
-                $table->foreignId('role_id');
+                $table->foreignId('role', 1);
+                $table->timestamps();
             });
         }
     }
