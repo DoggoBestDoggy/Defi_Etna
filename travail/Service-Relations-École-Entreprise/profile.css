@@ -103,3 +103,21 @@ nav .navbar .nav-links .links .sub-menu li a{
 nav .nav-links .links li:hover .services-sub-menu{
     display: block;
 }
+
+.info{
+    padding: 30px;
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    border-radius: 2em;
+    background: rgba(255, 255, 255, 0.75);
+    width: 70%;
+    height: 400px;
+}
+
+.cadre{
+    width: 100px;
+    height: 100px;
+    background: wheat;
+}
