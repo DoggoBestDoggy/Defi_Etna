@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\trombi;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,8 @@ Route::get('/etna', function () {
     return view('etna');
 });
 
+Route::post('/etna', [trombi::class, "add_profile"])->name('add_profile');
+
 Route::get('profile/{id}', function ($id) {
 
     $data = DB::table('profiles')->where('id', "=", $id)->get();
@@ -40,7 +43,6 @@ Route::get('/studio', function () {
 
     return view('le-studio', ['data' => $data]);
 });
-
 
 Route::get('/service-com-admissions', function () {
     $data = DB::table('profiles')->get();
