@@ -7,7 +7,7 @@
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Trombi</title>
-
+    <link href="../logo.png" rel="icon"/>
 </head>
 
 <body>
@@ -37,8 +37,16 @@
     </div>
     @foreach($data as $key => $data)
     <div class="info">
-        <div class="cadre" href="https://auth.etna-alternance.net/api/users/{{$data->login}}/photo"></div>
+        <img ng-src="https://auth.etna-alternance.net/api/users/{{$data->login}}/photo" alt="{{$data->login}}"
+        src="https://auth.etna-alternance.net/api/users/{{$data->login}}/photo" width="100" height="120">
+        <div class="details">
+            <div class="name">{{$data->firstname}} {{$data->lastname}}</div>
+            <div class="login">{{$data->login}}</div>
+            <div class="mail">{{$data->email}}</div>
+            <div class="job">{{$data->work}}</div>
+          </div>
     </div>
+
     @endforeach
 </body>
 

@@ -7,7 +7,7 @@
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Trombi</title>
-
+    <link href="logo.png" rel="icon"/>
 </head>
 
 <body>
