@@ -1,173 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Source+Sans+Pro:wght@200&display=swap');
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:"Nunito", Sans-serif;
 }
-
-body{
-    align-items: center;
+body
+{
+    background-image: url(fond.jpg);
 }
-
-section{
+section
+{
     position: relative;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background-image: url(fond.jpg);
-    background-size: cover;
-    background-position: center;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(104, 198, 221, 0.671);
+    transition: 0.5s;
 }
-
-section .wave{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url(wave.png);
-    background-size: 1000px 100px;
-}
-
-section .wave.wave1{
-    animation: animate 30s linear infinite;
-    z-index: 1000;
-    opacity: 1;
-    animation-delay: 0s;
-    bottom: 0;
-}
-
-section .wave.wave2{
-    animation: animate2 15s linear infinite;
-    z-index: 999;
-    opacity: 0.5;
-    animation-delay: -5s;
-    bottom: 10px;
-}
-
-section .wave.wave3{
-    animation: animate 30s linear infinite;
-    z-index: 998;
-    opacity: 0.2;
-    animation-delay: -2s;
-    bottom: 15px;
-}
-
-section .wave.wave4{
-    animation: animate2 5s linear infinite;
-    z-index: 997;
-    opacity: 0.7;
-    animation-delay: -5s;
-    bottom: 20px;
-}
-@keyframes animate{
-    0%{
-        background-position-x: 0;
-    }
-    100%{
-        background-position-x: 1000px;
-    }
-}
-
-@keyframes animate2{
-    0%{
-        background-position-x: 0;
-    }
-    100%{
-        background-position-x: -1000px;
-    }
-}
-nav
+header
 {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
-    background: rgba(255, 255, 255, 0.75);
-}
-
-nav .navbar
-{
-    height: 100%;
-    max-width: 1200px;
-    margin: auto;
+    padding: 10px 180px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
 }
-
-nav .navbar .nav-links
+header .logo
 {
-    height: 100%;
-    line-height: 70px;
+    position: relative;
+    max-width: 120px;
 }
-
-nav .navbar .nav-links .links
+header ul
 {
-    display: flex;
-}
-
-.logo
-{
-    width: 30%;
-}
-
-nav .navbar .nav-links .links li
-{
-    font-family: "Nunito", Sans-serif;
-    font-size: 14px;
-    font-weight: 600;
     position: relative;
     display: flex;
-    align-items: center;
+}
+header ul li
+{
     list-style: none;
-    padding: 0 14px;
 }
-
-nav .navbar .nav-links .links li a 
+header ul li a
 {
-    height: 100%;
-    color: rgb(124, 124, 124);
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    margin-left: 40px;
     text-decoration: none;
-    white-space: nowrap;
 }
-
-nav .navbar .nav-links .links li .arrow
+.content
 {
-    height: 100%;
-    width: 22px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox
+{
+    position: relative;
+    max-width: 600px;
+}
+.content .textbox h2
+{
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.content .textbox h2 span
+{
+    font-size: 2em;
+}
+.content .textbox p
+{
+    color: #fff;
+}
+a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.content .imgbox
+{
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+.mini-block
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    height: 350px;
+    width: 300px;
+    border-radius: 1em;
     text-align: center;
-    color: rgb(124, 124, 124);
-    line-height: 70px;
-    transition: .5s;
+    padding: 10px;
 }
-
-nav .navbar .nav-links .links li:hover .services
-{
-    transform: rotate(180deg);
-}
-
-nav .navbar .nav-links .links .sub-menu
-{
-    position: absolute;
-    top: 70px;
-    left: 0;
-    background: rgba(255, 255, 255, 0.75);
-    line-height: 40px;
-    display: none;
-}
-
-nav .navbar .nav-links .links .sub-menu li{
-    padding: 0 22px;
-}
-
-nav .navbar .nav-links .links .sub-menu li a{
-    color: rgb(124, 124, 124)
-}
-
-nav .nav-links .links li:hover .services-sub-menu{
-    display: block;
-}
-
