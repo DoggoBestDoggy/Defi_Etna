@@ -9,7 +9,6 @@ class trombi extends Controller
 {
     public function add_profile(Request $request)
     {
-
         $validated = $request->validate([
             'login' => ['required', 'min:1', 'max:8'],
             'firstname' => ['required'],
@@ -17,11 +16,10 @@ class trombi extends Controller
             'email' => ['required', 'email', 'unique:profiles'],
             'picture' => ['required'],
             'work' => ['required', 'max:45'],
-            'role' => ['required', 'integer', 'max:1']
+            'role' => ['required', 'integer']
         ]);
 
         $Profile = Profile::create($validated);
-
 
         return redirect('/');
     }

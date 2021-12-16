@@ -33,7 +33,7 @@
             <input type="text" name="work" id="work">
             <br />
 
-            <label for="role">Role : (SuperAdmin=0 | Admin=1 | User=2)</label>
+            <label for="role">Role : (SuperAdmin = 1 | Admin = 2 | User = 3)</label>
             <input type="number" name="role" id="role">
             <br />
 

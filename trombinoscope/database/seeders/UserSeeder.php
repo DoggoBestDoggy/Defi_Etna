@@ -14,7 +14,6 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        DB::table("profiles")->truncate();
         DB::table('profiles')->insert([
             [
                 'login' => 'samir',
