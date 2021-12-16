@@ -3,17 +3,17 @@
 <head>
 
     <meta charset="UTF-8">
-    <link href="../profile.css" rel="stylesheet">
+    <link href="../css/profile.css" rel="stylesheet">
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Trombi</title>
-    <link href="../logo.png" rel="icon"/>
+    <link href="../img/logo.png" rel="icon"/>
 </head>
 
 <body>
     <nav>
         <div class="navbar">
-            <div><a href="/"><img src="../logo.png" class="logo"></a>
+            <div><a href="/"><img src="../img/logo.png" class="logo"></a>
             </div>
             <div class="nav-links">
                 <ul class="links">

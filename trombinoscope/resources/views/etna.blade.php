@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <link href="etna.png" rel="icon">
+    <link href="img/etna.png" rel="icon">
     <title>Trombi ETNA</title>
 </head>
 
