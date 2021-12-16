@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <link href="../profile.css" rel="stylesheet">
+    <link href="trombi.css" rel="stylesheet">
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Trombi</title>
@@ -11,9 +11,16 @@
 </head>
 
 <body>
+
+    <section>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </section>
     <nav>
         <div class="navbar">
-            <div><a href="/"><img src="../logo.png" class="logo"></a>
+            <div><a href="/"><img src="logo.png" class="logo"></a>
             </div>
             <div class="nav-links">
                 <ul class="links">
@@ -35,11 +42,6 @@
         </div>
     </nav>
     </div>
-    @foreach($data as $key => $data)
-    <div class="info">
-        <img ng-src="https://auth.etna-alternance.net/api/users/{{$data->login}}/photo" alt="{{$data->login}}" src="https://auth.etna-alternance.net/api/users/{{$data->login}}/photo" width="100" height="120">
-    </div>
-    @endforeach
 </body>
 
 </html>

@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
+    return view('trombi');
+});
+
+Route::get('/etna', function () {
     return view('etna');
 });
 
@@ -31,3 +35,33 @@ Route::get('service', function () {
 
     return view('service', ['data' => $data]);
 })->name("service.profile");
+
+Route::get('/blu', function () {
+    $data = DB::table('profiles')->get();
+
+    return view('le-blu', ['data' => $data]);
+});
+
+Route::get('/studio', function () {
+    return view('le-studio');
+});
+
+Route::get('/serviceadmi', function () {
+    return view('service-com-admissions');
+});
+
+Route::get('/service-com-admissions', function () {
+    return view('service-com-admissions');
+});
+
+Route::get('/service-pedagogique', function () {
+    return view('service-pedagogique');
+});
+
+Route::get('/service-relations-ecole-entreprise', function () {
+    return view('service-relations-ecole-entreprise');
+});
+
+Route::get('/service-rh', function () {
+    return view('service-rh');
+});
