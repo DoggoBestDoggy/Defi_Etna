@@ -29,13 +29,6 @@ Route::get('profile/{id}', function ($id) {
     return view('profile', ['data' => $data]);
 });
 
-Route::get('service', function () {
-
-    $data = DB::table('profiles')->get();
-
-    return view('service', ['data' => $data]);
-})->name("service.profile");
-
 Route::get('/blu', function () {
     $data = DB::table('profiles')->get();
 
@@ -43,25 +36,32 @@ Route::get('/blu', function () {
 });
 
 Route::get('/studio', function () {
-    return view('le-studio');
+    $data = DB::table('profiles')->get();
+
+    return view('le-studio', ['data' => $data]);
 });
 
-Route::get('/serviceadmi', function () {
-    return view('service-com-admissions');
-});
 
 Route::get('/service-com-admissions', function () {
-    return view('service-com-admissions');
+    $data = DB::table('profiles')->get();
+
+    return view('service-com-admissions', ['data' => $data]);
 });
 
 Route::get('/service-pedagogique', function () {
-    return view('service-pedagogique');
+    $data = DB::table('profiles')->get();
+
+    return view('service-pedagogique', ['data' => $data]);
 });
 
 Route::get('/service-relations-ecole-entreprise', function () {
-    return view('service-relations-ecole-entreprise');
+    $data = DB::table('profiles')->get();
+
+    return view('service-relations-ecole-entreprise', ['data' => $data]);
 });
 
 Route::get('/service-rh', function () {
-    return view('service-rh');
+    $data = DB::table('profiles')->get();
+
+    return view('service-rh', ['data' => $data]);
 });
