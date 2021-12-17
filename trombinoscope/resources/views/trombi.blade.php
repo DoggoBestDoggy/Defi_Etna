@@ -1,47 +1,40 @@
 <!DOCTYPE html>
 
-<head>
+<html>
 
+<head>
     <meta charset="UTF-8">
-    <link href="css/trombi.css" rel="stylesheet">
-    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/trombi.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <title>Trombi</title>
-    <link href="img/logo.png" rel="icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>TROMBI</title>
+    <link href="img/logo.png" rel="icon" />
 </head>
 
 <body>
-
-    <section>
-        <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class="wave wave3"></div>
-        <div class="wave wave4"></div>
-    </section>
-    <nav>
-        <div class="navbar">
-            <div><a href="/"><img src="img/logo.png" class="logo"></a>
+    <div class="rotated-half-circle"></div>
+    <section class="sec">
+        <header>
+            <a href="/"><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Bienvenue<br><span>trombi</span></h2>
+                <p>Un trombinoscope est une liste des photographies des membres d'une organisation,
+                    d'un groupe, d'une classe (à l'école).</p>
             </div>
-            <div class="nav-links">
-                <ul class="links">
-                    <li><a href="/">HOME</a></li>
-                    <li>
-                        <a href="#">SERVICES</a>
-                        <i class='bx bxs-chevron-down arrow services'></i>
-                        <ul class="services-sub-menu sub-menu">
-                            <li><a href="/blu">Blu</a></li>
-                            <li><a href="/studio">Studio</a></li>
-                            <li><a href="/service-com-admissions">Admissions</a></li>
-                            <li><a href="/service-pedagogique">Pedagogie</a></li>
-                            <li><a href="/service-relations-ecole-entreprise">Relation E.E</a></li>
-                            <li><a href="/service-rh">RH</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="imgbox">
+                <div class="mini-block">
+                    <img src="img/Samir.png" class="samir">
+                    <p>Samir Rinaz<br>DIRECTEUR</p>
+                </div>
             </div>
         </div>
-    </nav>
-    </div>
+    </section>
 </body>
 
 </html>

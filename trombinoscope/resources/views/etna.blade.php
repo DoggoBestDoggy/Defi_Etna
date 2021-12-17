@@ -42,7 +42,7 @@
             <br />
 
             <br />
-            <input type="submit" value="Add Profile">
+            <input onclick="alert('Le profil à bien été enregistré !')"type="submit" value="Add Profile">
             <br />
 
         </form>
