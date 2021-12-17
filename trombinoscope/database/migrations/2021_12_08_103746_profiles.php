@@ -13,7 +13,7 @@ class Profiles extends Migration
      */
     public function up()
     {
-        if (!schema::hasTable('profiles')) {
+        if (!schema::hasTable('profiles')) { //Table profile contenant toutes les données demandées
             Schema::create('profiles', function (Blueprint $table) {
                 $table->id();
                 $table->string('login', 45)->unique();

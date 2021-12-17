@@ -23,7 +23,7 @@ Route::get('/etna', function () {
     return view('etna');
 });
 
-Route::post('/etna', [trombi::class, "add_profile"])->name('add_profile');
+Route::post('/etna', [trombi::class, "add_profile"])->name('add_profile'); //Envoie les données du formulaire dans le Controller
 
 Route::get('profile/{id}', function ($id) {
 
