@@ -8,8 +8,9 @@
 }
 body
 {
-    background-image: url(fond.jpg);
+    background-image: url(../img/fond.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 section
 {
@@ -142,6 +143,19 @@ img
   max-width: 100%;
   max-height: 100%;
 }
+
+.cadrage {
+    padding: 3px;
+    background: #67e1ff;
+    margin-bottom: 14px;
+
+    height: 100%;
+    width: 100%;
+    border: 3px solid #ffff;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .block1
 {
   padding: 20px;
@@ -169,6 +183,7 @@ img
 }
 .block3
 {
+    margin-top: 18%;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -177,7 +192,7 @@ img
   border-radius: 2em;
   background: rgba(81, 216, 250, 0.7);
   width: 250px;
-  height: 300px;
+  height: 100px;
 }
 .profil1
 {
@@ -189,6 +204,7 @@ img
 }
 .profil2
 {
+    margin-right: 15px;
   margin-bottom: 20px;
   height: 150px;
   width: 150px;

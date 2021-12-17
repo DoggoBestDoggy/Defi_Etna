@@ -3,50 +3,54 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/formulaire.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="img/etna.png" rel="icon">
-    <title>Trombi ETNA</title>
+    <title>TROMBINOSCOPE</title>
 </head>
 
 <body>
-    <div class="formulaire">
-        <form action="" method="post">
-
-            @csrf
-
-            <label for="login">Login :</label>
-            <input type="text" name="login" id="login">
-            <br />
-
-            <label for="firstname">Firstname :</label>
-            <input type="text" name="firstname" id="firstname">
-            <br />
-
-            <label for="lastname">Lastname :</label>
-            <input type="text" name="lastname" id="lastname">
-            <br />
-
-            <label for="email">Email :</label>
-            <input type="email" name="email" id="email">
-            <br />
-
-            <label for="work">Work Station :</label>
-            <input type="text" name="work" id="work">
-            <br />
-
-            <label for="role">Role : (SuperAdmin = 1 | Admin = 2 | User = 3)</label>
+    <div class="container">
+      <div class="title">Ajouter un membre</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Login :</span>
+              <input type="text" placeholder="Entre ton login" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Prénom :</span>
+              <input type="text" placeholder="Entre ton prénom" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Nom :</span>
+              <input type="text" placeholder="Entre ton nom" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Email :</span>
+              <input type="text" placeholder="Entre ton mail" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Poste de travail :</span>
+              <input type="text" placeholder="Entre ton poste de travail" required>
+            </div>
+            <div class="input-box">
+            <label for="role"><span class="details">Admin :SA = 1 | A = 2 | U = 3)</label></span>
             <input type="number" name="role" id="role">
-            <br />
-
-            <label for="picture">Picture :</label>
+          </div>
+          <div class="input-box">
+            <label for="picture"><span class="details">Photo :</span></label>
             <input type="file" name="picture" id="picture" accept="image/png, image/jpeg">
-            <br />
-
-            <br />
-            <input onclick="alert('Le profil à bien été enregistré !')"type="submit" value="Add Profile">
-            <br />
-
+          </div>
+          </div>
+          <div class="button">
+            <input onclick="alert('Le profil à bien été enregistré !')" type="submit" value="Enregistrer">
+          </div>
         </form>
+      </div>
     </div>
-</body>
 
+  </body>
 </html>
