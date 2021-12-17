@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="formulaire.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+<body>
+  <div class="container">
+    <div class="title">Ajouter un membre</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Login :</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Firstname :</span>
+            <input type="text" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Lastname :</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email :</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">work Station :</span>
+            <input type="text" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password :</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div>
+          <div class="input-box">
+          <label for="role"><span class="details">Admin :(SuperAdmin = 1 | Admin = 2 | User = 3)</label></span>
+          <input type="number" name="role" id="role">
+        </div>
+        <div class="input-box">
+          <label for="picture"><span class="details">Picture :</span></label>
+          <input type="file" name="picture" id="picture" accept="image/png, image/jpeg">
+        </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
